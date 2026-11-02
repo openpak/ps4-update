@@ -1,0 +1,16 @@
+# Sample only. Copy to ~/.config/containers/systemd/openpak-ps4-update.container.
+[Unit]
+Description=OpenPak ps4-update
+
+[Container]
+ContainerName=openpak-ps4-update
+Image=ghcr.io/openpak/ps4-update:latest
+Network=openpak
+EnvironmentFile=%h/openpak/deploy/ps4-update.env
+Environment=PS4_UPDATE_ADDR=:8540
+
+[Service]
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
