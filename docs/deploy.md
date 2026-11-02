@@ -1,6 +1,6 @@
 # Deploy
 
-Not yet deployed.
+Deployed 2026-11-02 on the production box: quadlet `openpak-ps4-update` (image `ghcr.io/openpak/ps4-update:0.1.0`, pinned 10.89.2.62), Traefik router `ps4-update-web` (priority 30, web entrypoint) ahead of `np-account-web`. Verified through Traefik with the `dus01` and `fus01` host names. Status check: PS4 group on status.openpak.org.
 
 ## Run
 
